@@ -1,0 +1,131 @@
+.back_home {
+  margin: 16px 0 0 16px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  @include for-large-up {
+    margin: 35px 0 48px 0;
+  }
+
+  &-icon {
+    background-image: url(/src/img/chevron_left.png);
+    width: 8px;
+    height: 14px;
+    @include for-large-up {
+      color: #d8e1ed;
+      transform: matrix(-1, 0, 0, 1, 0, 0);
+    }
+  }
+  &-text {
+    margin-left: 8px;
+    margin-right: 8px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    color: $color-dark-grey;
+  }
+  :nth-child(4) {
+    @include for-large-down {
+      display: none;
+    }
+  }
+}
+.search_section {
+  margin: 24px 16px 18px 16px;
+  width: 343 px;
+  height: 222px;
+  background: $block-green-color;
+  border-radius: 16px;
+  @include for-large-up {
+    margin: 0 0 48px 0;
+    width: 1074px;
+    height: 267px;
+  }
+  &-image {
+    width: 379.04px;
+    height: 259px;
+    position: relative;
+    top: -147px;
+    right: -150px;
+    @include for-large-down {
+      display: none;
+    }
+  }
+
+  &-title {
+    margin: 0;
+    padding: 16px 16px 8px 16px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 36px;
+    display: flex;
+    align-items: center;
+    color: $color-green;
+    @include for-large-up {
+      font-size: 32px;
+      line-height: 48px;
+      padding: 56px 0 6px 56px;
+    }
+  }
+  &-subtitle {
+    margin: 0;
+    padding: 0 16px 16px 16px;
+    font-family: Poppins;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 27px;
+    color: $text-color-grey;
+    word-spacing: normal;
+    @include for-large-up {
+      padding: 0 0 18px 51px;
+    }
+  }
+  &-input {
+    display: flex;
+    padding: 0;
+    margin: 0 16px 16px 16px;
+    width: 311px;
+    height: 40px;
+    border: none;
+    background: $color-white;
+    box-shadow: 0px 0.470434px 2.21381px rgba(0, 0, 0, 0.0196802);
+    border-radius: 12px;
+    @include for-large-up {
+      width: 522px;
+      height: 56px;
+      margin: 0 0 56px 56px;
+    }
+  }
+  [type="search"] {
+    border-radius: 12px;
+    border: none;
+    outline: none;
+  }
+  input::placeholder {
+    padding: 10px 0 10px 16px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: $color-dark-grey;
+  }
+
+  .fas.fa-search {
+    float: right;
+    padding: 0;
+    margin: 11px 12px 12px 110px;
+    width: 24px;
+    height: 24px;
+    color: $color-light-grey;
+    @include for-large-up {
+      margin: 20px 0 20px 299px;
+    }
+  }
+}

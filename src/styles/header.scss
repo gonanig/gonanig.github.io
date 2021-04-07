@@ -1,0 +1,99 @@
+.web_address {
+  width: 375px;
+  background-image: url("/src/img/web_address.png");
+  height: 85px;
+}
+header {
+  display: flex;
+  flex-direction: row;
+  height: 64px;
+  background-color: $color-white;
+  @include for-large-up {
+    margin-left: -87px;
+    width: 1440px;
+  }
+}
+.navigation {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  margin-right: 523px;
+  padding: 0;
+
+  > li,
+  a {
+    font-family: Poppins;
+    color: #262626;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    list-style: none;
+    text-decoration: none;
+  }
+  li {
+    margin-right: 24px;
+  }
+  @include for-large-down {
+    display: none;
+  }
+}
+.logo {
+  width: 107px;
+  height: 24px;
+  float: left;
+  margin: 20px 155px 20px 17px;
+  @include for-large-up {
+    margin: 20px 44px 20px 24px;
+  }
+  span {
+    font-size: 25px;
+    font-weight: 700;
+    color: #262626;
+  }
+}
+
+.user_section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &-user {
+    margin-left: 16px;
+    width: 24px;
+    height: 24px;
+  }
+  span {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    align-items: center;
+    color: $color-green;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  svg {
+    margin-left: 16px;
+  }
+}
+.icon_section {
+  display: flex;
+  flex-direction: row;
+  margin: 16px 16px 16px 0;
+
+  > div {
+    width: 32px;
+    height: 32px;
+  }
+  :first-child {
+    margin-right: 16px;
+  }
+
+  &-frame {
+    background-image: url(/src/img/Frame.png);
+  }
+  @include for-large-up {
+    display: none;
+  }
+}

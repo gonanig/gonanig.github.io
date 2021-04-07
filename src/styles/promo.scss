@@ -1,0 +1,84 @@
+.promo_banner {
+  width: 343px;
+  height: 262px;
+  background: $block-green-color;
+  border-radius: 16px;
+  margin: 0 16px 0 16px;
+  @include for-large-up {
+    margin: 0;
+    width: 1074px;
+    position: relative;
+    height: 252px;
+  }
+  &-logo {
+    margin: 16px 0 16px 16px;
+    padding: 16px 0;
+    width: 107px;
+    height: 24px;
+    @include for-large-up {
+      margin: 24px 0 24px 24px;
+    }
+    span {
+      font-size: 25px;
+      font-weight: 700;
+      color: #262626;
+    }
+  }
+  &-title {
+    margin: 0 16px;
+    font-family: Poppins;
+    color: $color-green;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 36px;
+    display: flex;
+    @include for-large-up {
+      font-size: 32px;
+      line-height: 48px;
+      margin: 0 57px 8px 24px;
+    }
+  }
+  &-subtitle {
+    margin: 8px 16px 0 16px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    @include for-large-up {
+      margin: 0 0 24px 24px;
+      font-size: 24px;
+      line-height: 36px;
+    }
+  }
+  &-btn {
+    width: 311px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: $color-white;
+    height: 40px;
+    border: none;
+    background: $color-green;
+    border-radius: 8px;
+    margin: 16px;
+    @include for-large-up {
+      width: 156px;
+      height: 40px;
+    }
+  }
+  .img {
+    width: 336px;
+    height: 261px;
+    top: -15px;
+    right: -15px;
+    position: absolute;
+    @include for-large-down {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,31 @@
+@import "./breakpoints.scss";
+@import "./variables.scss";
+@import "./common.scss";
+@import "./header.scss";
+@import "./search.scss";
+@import "./information.scss";
+@import "./promo.scss";
+@import "./footer.scss";
+
+* {
+  box-sizing: border-box;
+}
+body,
+html {
+  width: 375px;
+  background-color: $body-background-color-mobile;
+  @include for-large-up {
+    width: 100%;
+  }
+}
+
+.page {
+  max-width: 375px;
+  @include for-large-up {
+    margin: 0 279px 0 87px;
+    max-width: 1440px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+}
