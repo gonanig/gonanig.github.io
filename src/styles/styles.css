@@ -236,7 +236,7 @@ header {
     margin: 0 0 56px 56px;
   }
 }
-.search_section [type=search] {
+.search_section [type="search"] {
   border-radius: 12px;
   border: none;
   outline: none;
@@ -415,18 +415,18 @@ header {
 
 @media screen and (min-width: 1440px) {
   #plants_section > span,
-figure {
+  figure {
     display: inline;
   }
 }
 
 @media screen and (min-width: 1440px) {
   #gallery,
-#gallery1,
-#gallery2,
-#gallery3,
-#gallery4,
-#gallery5 {
+  #gallery1,
+  #gallery2,
+  #gallery3,
+  #gallery4,
+  #gallery5 {
     display: flex;
     margin-bottom: 56px;
     flex-direction: row;
@@ -658,7 +658,7 @@ html {
 }
 @media screen and (min-width: 1440px) {
   body,
-html {
+  html {
     width: 100%;
   }
 }
